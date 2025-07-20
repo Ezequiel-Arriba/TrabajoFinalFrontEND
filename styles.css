@@ -1,7 +1,7 @@
 /* Estilos del Headre */
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 header ul {
@@ -31,13 +31,13 @@ header.img {
 
 iframe {
     display: flex;
-    width: 100%;   
+    width: 100%;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     font-family: "Roboto", sans-serif;
     margin: 10px;
-        
+
 }
 
 .productos {
@@ -47,7 +47,7 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     font-family: "Roboto", sans-serif;
@@ -55,6 +55,8 @@ iframe {
 }
 
 .producto {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
     border: 3px solid;
@@ -63,20 +65,33 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-       img {
+
+    img {
         width: 100%;
         height: 300px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
     }
+
+    button {
+        
+        width: 100%;
+        padding: 10px;
+        background-color: #a6a5a5;
+        color: black;
+        cursor: pointer;
+        border: 2px solid;
+        border-radius: 5px;
+        font-size: 16px;
+    }
 }
 
-.productos :hover
-{
-   
+.productos :hover {
+
     transform: scale(1.05);
     transition: translate 0.3s ease;
 }
+
 .pilotos {
     display: flex;
     border: 3px solid;
@@ -84,7 +99,7 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     font-family: "Roboto", sans-serif;
@@ -102,7 +117,8 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-       img {
+
+    img {
         width: auto;
         height: auto;
         object-fit: cover;
@@ -111,9 +127,8 @@ iframe {
     }
 }
 
-.pilotos :hover
-{
-   
+.pilotos :hover {
+
     transform: scale(1.05);
     transition: translate 0.3s ease;
 }
@@ -125,11 +140,11 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     font-family: "Roboto", sans-serif;
-    background-color: #ff8000;  
+    background-color: #ff8000;
 }
 
 
@@ -144,24 +159,27 @@ iframe {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-       img {
+
+    img {
         width: 350px;
         height: 200px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         border: 3px solid;
     }
+
     text-align: justify;
 }
 
-.resenias :hover
-{
+.resenias :hover {
     transform: scale(1.05);
     transition: translate 0.3s ease;
 }
 
 
 .carrito {
+    width: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #ff8000;
@@ -188,11 +206,11 @@ footer {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     font-family: "Roboto", sans-serif;
-    background-color: #ff8000;  
+    background-color: #ff8000;
 
 }
 
@@ -214,7 +232,7 @@ footer {
 }
 
 #formularioNews input {
-        width: 100%;
+    width: 100%;
     padding: 5px;
     margin-bottom: 5px;
 }
