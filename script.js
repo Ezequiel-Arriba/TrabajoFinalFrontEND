@@ -79,7 +79,19 @@ function compararProductosPorIdAscendente(a, b) {
 
 productos.sort(compararProductosPorIdAscendente);
 
+// Array para almacenar los productos del carrito
 let carrito = [];
+
+
+/* funcion click en botón agregar al carrito */
+
+function clickAgregarAlCarrito(event) {
+    if (event.target.classList.contains("agregar-carrito")) {
+        const idProducto = event.target.dataset.id;
+        agregarAlCarrito(idProducto);
+    }
+
+}
 
 /* Agregar los productos al HTML */
 
@@ -92,17 +104,17 @@ function agregarProduto() {
         console.error("No se encontró el elemento con la clase 'productos'");
         return;
     }
-    
-    for (let i=0; i < productos.length; i++) {
+
+    for (let i = 0; i < productos.length; i++) {
         const producto = productos[i];
-        divProductos.insertAdjacentHTML("afterbegin", 
+        divProductos.insertAdjacentHTML("afterbegin",
             `
             <div class="producto">
                     <img src="${producto.imagen}" alt="${producto.nombre}">
                     <div class="producto-contenido">
                         <h3>${producto.nombre}</h3>
                         <p> ID: ${producto.id}</p>
-                        <p> $${producto.precio}</p>
+                        <p> Precio: $${producto.precio}</p>
                     </div>
                 <button class="agregar-carrito" data-id="${producto.id}">Agregar al carrito</button>
             </div>
@@ -110,4 +122,11 @@ function agregarProduto() {
         );
 
     }
-} 
+
+    /* delegamos el evento del boton agregar al carrito */
+    divProductos.addEventListener("click", clickAgregarAlCarrito);
+}
+
+function agregarAlCarrito(idProducto) {
+
+}
