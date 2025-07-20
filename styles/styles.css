@@ -59,7 +59,7 @@ iframe {
     border-radius: 10px;
     border: 3px solid;
     width: 300px;
-    height: 400px;
+    height: auto;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -98,7 +98,7 @@ iframe {
     border-radius: 10px;
     border: 3px solid;
     width: 300px;
-    height: 500px;
+    height: auto;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -132,24 +132,26 @@ iframe {
     background-color: #ff8000;  
 }
 
+
 .resenia {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
     border: 3px solid;
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: auto;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
        img {
-        width: 300px;
+        width: 350px;
         height: 200px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         border: 3px solid;
     }
+    text-align: justify;
 }
 
 .resenias :hover
