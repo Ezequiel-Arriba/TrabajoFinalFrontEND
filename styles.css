@@ -190,9 +190,20 @@ iframe {
     padding: 20px;
     font-family: "Roboto", sans-serif;
     background-color: white
+    
 }
 
-
+.lista-carrito button {
+        
+        
+        
+        background-color: #a6a5a5;
+        color: black;
+        cursor: pointer;
+        border-radius: 8px;
+       
+        
+    }
 
 
 
@@ -265,3 +276,4 @@ footer {
     text-decoration: none;
 
 }
+
