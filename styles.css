@@ -206,7 +206,13 @@ iframe {
     }
 
 
-
+.lista-carrito li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
 
 /* Estilos del Footer */
 
